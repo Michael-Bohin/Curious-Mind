@@ -1,0 +1,113 @@
+body {
+    overflow: hidden;
+    font-family: 'Itim';
+    background-image: url("./pics in use/background3.jpg");
+    background-size: cover;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+}
+
+#table1 {
+    position: absolute;
+    z-index: 0;
+    top: 130px;
+    left: 100px;
+    width: 700px;
+    height: 460px;
+    background-color: azure;
+    border-radius: 25px;
+}
+
+#happy_sun {
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+    left: 130px;
+    width: 200px;
+}
+
+
+#msg1 {
+    position: absolute;
+    z-index: 1;
+    top: 170px;
+    left: 400px;
+    width: 400px;
+    border-radius: 15px;
+    font-size: 38px;
+    font-family: 'Caveat Brush';
+}
+
+#msg2 {
+    position: absolute;
+    z-index: 1;
+    top: 390px;
+    left: 150px;
+    width: 600px;
+    border-radius: 15px;
+    font-size: 38px;
+    font-family: 'Caveat Brush';
+}
+
+#rainbow_pie {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 1052px;
+}
+
+#pie1 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+#pie2 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+#pie3 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+#pie4 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+#pie5 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+#pie6 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+#pie7 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+#pie8 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+#pie9 { position: absolute; z-index: 2; top: 50px; left: 1052px; opacity: 0; }
+
+.pie_text{
+    font-family: 'Caveat Brush';
+    font-size: 20px;
+    z-index: 3;
+}
+
+#topicA { position: absolute; top: 105px;  left: 1395px; color: azure; }
+#topicB { position: absolute; top: 250px; left: 1505px; color: azure; }
+#topicC { position: absolute; top: 402px; left: 1480px; }
+#topicD { position: absolute; top: 545px; left: 1390px; }
+#topicE { position: absolute; top: 545px; left: 1225px; }
+#topicF { position: absolute; top: 402px; left: 1125px; }
+#topicG { position: absolute; top: 250px; left: 1100px;  color: azure; }
+#topicH { position: absolute; top: 105px;  left: 1220px;  color: azure; }
+
+#math {
+    position: absolute;
+    top: 305px;
+    left:1300px;
+    color: azure;
+    font-size: 32px;
+}
+
+#one {
+    position: absolute;
+    top: 800px;
+    left: 700px;
+    z-index: 5;
+}
+
+#two {
+    position: absolute;
+    top: 800px;
+    left: 900px;
+    z-index: 5;
+}
+
