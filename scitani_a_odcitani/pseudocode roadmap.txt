@@ -1,0 +1,26 @@
+povolene operace: scitani / odcitani / pocitani => + / - / + -
+rezim: neomezeny (cele teleso) / bez prechodu desitek (vyssi ze scitancu mod deset == vysledek mod 10 ) / desitky (vsechny jednotky jsou 0 )
+limit (do, od) : maximalni cislo oboru 
+			  povolene operace , rezim, limit
+1. Sčítání do 10 => 		{ +, all, 10}
+2. Odčítání od 10 => 		{ -, all, 10}
+3. Sčítání do 20 bez pr =>	{ +, bez, 20} ! bez prikladu z 1
+4. Odčítáno od 20 bez pr =>	{ -, bez, 20} ! bez prikladu z 2
+5. Počítání do 20 bez pr =>	{ +-, bez, 20}
+6. Sčítání do 20 => 		{ +, all, 20}
+7. Odčítání od 20 => 		{ -, all, 20}
+8. Počítání do 20 => 		{ +-, all, 20}
+9. Sčítání desítek => 		{ +, des, 100}
+10. Odčítání desítek => 	{ -, des, 100}
+11. Sčítání do 100 bez pr => 	{ +, bez, 100} 
+12. Odčítání od 100 bez pr =>	{ -, bez, 100}
+13. Sčítání do 100 => 		{ +, all, 100}
+14. Odčítání od 100 => 		{ -, all, 100}
+15. Počítání do 100 => 		{ +-, all, 100}
+
+
+
+
+
+class view_menu { run menu view }
+class game_plusminus { eat type out of those 15 options, save html of view menu to be able to replace it back , if user wants to go to menu }

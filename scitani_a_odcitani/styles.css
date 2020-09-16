@@ -1,0 +1,398 @@
+body {
+    overflow: hidden;
+    font-family: 'Itim';
+    background-image: url("background3.jpg");
+    background-size: cover;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+}
+
+/*>>>>>>>>>> styles game plus minus <<<<<<<<<<<< */
+
+
+#otazka {
+    position: absolute;
+    top: 200px;
+    left: 750px;
+    z-index: 5;
+    color: azure;
+    font-family: 'Caveat Brush';
+    font-size: 40px;
+}
+
+#hrajem {
+    position: absolute;
+    top: 600px;
+    left: 825px;
+    z-index: 5;
+}
+
+#pocet {
+    position: absolute;
+    top: 360px;
+    left: 940px;
+    z-index: 5;
+    color: azure;
+    font-family: 'Caveat Brush';
+    font-size: 80px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 200px;
+    margin: 275px auto;
+    z-index: 5;
+}
+
+.container .seekbar {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    border-radius: 10px;
+    background: #fff;
+    z-index: 5;
+}
+
+.container .seekbar .fill {
+    height: 10px;
+    background: #0af;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.container .seekbar .handle {
+    width: 10px;
+    height: 10px;
+    background: #0af;
+    border-radius: 10px;
+    transform: scale(2);
+    transition: all 0.1s ease-in-out;
+    z-index: 5;
+}
+
+.container .seekbar .handle:hover {
+    background: #33bbff;
+    cursor: pointer;
+    transform: scale(2.6);
+    z-index: 5;
+}
+
+
+#tabule {
+    position: absolute;
+    top: 155px;
+    left: 170px;
+    width: 1567px;
+    height: 630px;
+    border-radius: 35px;
+    background-color: #1eb2a6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(82, 222, 151, 0.6)), to(rgba(82, 222, 151, 0.9)));
+    background-image: linear-gradient(to bottom,  rgba(82, 222, 151, 0.6), rgba(82, 222, 151, 0.9));
+    box-shadow: 0 0 70px rgba(82, 222, 151, 0.1), 0 5px 20px rgba(98, 255, 181, 0.6), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
+}
+
+
+.tabule {
+    position: absolute;
+    top: 155px;
+    width: 366px;
+    height: 630px;
+    border-radius: 35px;
+}
+
+#herni_tabule {
+    position: absolute;
+    top: 190px;
+    left: 1270px;
+    width: 400px;
+    height: 560px;
+    border-radius: 25px;
+    z-index: 1;
+    background-color: #3282b7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 76, 117, 0.9)), to(rgba(28, 113, 165, 0.6)));
+    background-image: linear-gradient(to bottom, rgba(14, 76, 117, 0.9), rgba(28, 113, 165, 0.6));
+    box-shadow: 0 0 70px rgba(48, 138, 255, 0.1), 0 5px 20px rgba(65, 154, 255, 0.6), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
+}
+
+
+#priklad {
+    color:azure;
+    font-family: 'Caveat Brush';
+
+    font-size: 160px;
+    position: absolute;
+    top: 204px;
+    left: 215px;
+    width: 595px;
+    text-align: center;
+
+}
+
+input { 
+    text-align: center; 
+}
+
+#odpoved{
+    position:absolute;
+    top: 365px;
+    left: 820px;
+    height: 200px;
+    width: 240px;
+    border: 0;
+    background: rgba(150, 153, 175, 0.28);
+    border-radius: 20px;
+    color: azure;
+    font-family: "Caveat Brush";
+    font-size: 160px;
+
+}
+
+#tlacitko {
+    position:absolute;
+    top: 420px;
+    left: 1125px;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    border: 0;
+    background: rgba(42,50,113, .28);
+    cursor: pointer;
+    font-size: 40px;
+    color: azure;
+    font-family: "Caveat Brush";
+}
+
+#tlacitko:hover {
+    background: rgba(82,120,198, .48);
+}
+
+.odp {
+    position: absolute;
+    font-family: "Caveat Brush";
+    font-size: 30px;
+    color: azure;
+    z-index: 10;
+    margin-top: 10px;
+    left: 1330px;
+}
+
+#odp1 { top: 215px; left: 1330px; width: 150px;-webkit-transition-duration: 2s; -moz-transition-duration: 2s; -o-transition-duration: 2s; transition-duration: 2s; }
+#odp2 { top: 265px; left: 1330px; width: 150px;-webkit-transition-duration: 2s; -moz-transition-duration: 2s; -o-transition-duration: 2s; transition-duration: 2s; }
+#odp3 { top: 315px; left: 1330px; width: 150px;-webkit-transition-duration: 2s; -moz-transition-duration: 2s; -o-transition-duration: 2s; transition-duration: 2s; }
+#odp4 { top: 365px; left: 1330px; width: 150px;-webkit-transition-duration: 2s; -moz-transition-duration: 2s; -o-transition-duration: 2s; transition-duration: 2s; }
+#odp5 { top: 415px; left: 1330px; width: 150px;-webkit-transition-duration: 2s; -moz-transition-duration: 2s; -o-transition-duration: 2s; transition-duration: 2s; }
+/* transitions dont work this way, sadly */
+#odp6 {
+    top: 465px;width: 150px;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+#odp7 {
+    top: 515px;width: 150px;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+#odp8 {
+    top: 565px;width: 150px;
+}
+
+#odp9 {
+    top: 615px;width: 150px;
+}
+
+#odp10 {
+    top: 665px;width: 150px;
+}
+
+
+/*---------------*/
+
+#odp11 {
+    left: 1490px;
+    top: 215px;width: 150px;
+}
+
+#odp12 {
+    left: 1490px;
+    top: 265px;width: 150px;
+}
+
+#odp13 {
+    left: 1490px;
+    top: 315px;width: 150px;
+}
+
+#odp14 {
+    left: 1490px;
+    top: 365px;width: 150px;
+}
+
+#odp15 {
+    left: 1490px;
+    top: 415px;width: 150px;
+}
+
+#odp16 {
+    left: 1490px;
+    top: 465px;width: 150px;
+}
+
+#odp17 {
+    left: 1490px;
+    top: 515px;width: 150px;
+}
+
+#odp18 {
+    left: 1490px;
+    top: 565px;width: 150px;
+}
+
+#odp19 {
+    left: 1490px;
+    top: 615px;width: 150px;
+}
+
+#odp20 {
+    left: 1490px;
+    top: 665px;
+    width: 150px;
+}
+
+#rep {
+    position: absolute;
+    top: 600px;
+    left: 910px;
+}
+
+#submenu {
+    position: absolute;
+    top: 600px;
+    left: 610px;
+}
+
+#portal2 {
+    position: absolute;
+    top: 600px;
+    left: 310px;
+}
+
+#gg_win {
+    position: absolute;
+    top: 350px;
+    left: 480px;
+    font-family: "Caveat Brush";
+    font-size: 40px;
+    color: azure;
+    z-index: 5;
+}
+
+#gg_improve1 {
+    position: absolute;
+    top: 230px;
+    left: 440px;
+    width: 700px;
+    font-family: "Caveat Brush";
+    font-size: 40px;
+    color: azure;
+    z-index: 5;
+}
+
+#gg_improve2 {
+    position: absolute;
+    top: 280px;
+    left: 330px;
+    width: 1000px;
+    font-family: "Caveat Brush";
+    font-size: 40px;
+    color: azure;
+    z-index: 5;
+}
+
+/* >>>>>>>>>>>> styles menu <<<<<<<<< */
+
+#portal {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 180px;
+}
+
+.t1 { position: absolute; left: 239px; }
+.t2 { position: absolute; left: 635px; }
+.t3 { position: absolute; left: 1031px; }
+.t4 { position: absolute; left: 1427px; }
+
+.r0 { top: 196px; }
+.r1 { top: 296px; -webkit-animation-delay: 0.143s; animation-delay: 0.143s; }
+.r2 { top: 362px; -webkit-animation-delay: 0.286s; animation-delay: 0.286s; }
+.r3 { top: 428px; -webkit-animation-delay: 0.428s; animation-delay: 0.428s; }
+.r4 { top: 494px; -webkit-animation-delay: 0.571s; animation-delay: 0.571s; }
+.r5 { top: 560px; -webkit-animation-delay: 0.714s; animation-delay: 0.714s; }
+.r6 { top: 626px; -webkit-animation-delay: 0.857s; animation-delay: 0.857s; }
+.r7 { top: 692px; -webkit-animation-delay: 1s; animation-delay: 1s; }
+
+
+
+#t1 { background-color: #db2d43; left: 183px;  }
+#t2 { background-color: #ffa340; left: 579px;  }
+/*#t2 { background-color: #ffe85e; left: 579px;  }*/
+#t3 { background-color: #1eb2a6; left: 975px;  }
+#t4 { background-color: #3282b7; left: 1371px; }
+
+#nazev_tema {
+    position: absolute;
+    top: -30px;
+    color: azure;
+    left: 183px;
+    width: 1554px;
+    text-align: center;
+    font-family: 'Caveat Brush';
+    font-size: 70px;
+}
+
+.textM {
+    color:white;
+    font-family: 'Caveat Brush';
+    font-size: 38px;
+    margin-left: 30px;
+    margin-top: 15px;
+    
+}
+
+.text {
+    color:white;
+    font-family: 'Caveat Brush';
+    font-size: 22px;
+    margin-left: 50px;
+    
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
